@@ -1,6 +1,5 @@
 package Intranet;
 
-import java.util.Map;
 
 public class Course {
     private boolean register;

@@ -1,6 +1,5 @@
 package Intranet;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -12,9 +11,10 @@ public class Student extends User {
     public Map<Course,Boolean> register;
 
     public Student(){super();}
-    public Student(String name, String surname, String faculty, String YearStudy, Double gpa){
-        super(name,surname,faculty);
+    public Student(String name, String surname, String id,String faculty, String YearStudy, Double gpa){
+        super(name,surname,id);
         this.gpa = gpa;
+        this.faculty = faculty;
         this.yearStudy = YearStudy;
         studentCourseMark = new HashMap<>();
         register = new HashMap<>();
@@ -57,4 +57,13 @@ public class Student extends User {
     public void setYearStudy(String yearStudy){ this.yearStudy = yearStudy;}
     public double getGpa(){ return  gpa;}
     public void setGpa(double gpa){ this.gpa = gpa;}
+    public String toString(){
+        String s = " " + getName();
+        s += " " + getSurname();
+        s += " " + getFaculty();
+        s += " " + getYearStudy();
+        s += " " + getId();
+        s += " " + getGpa();
+        return  s ;
+    }
 }
