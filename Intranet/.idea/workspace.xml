@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="537355c2-d20d-4875-b574-998f6acc2d4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Intranet/Intranet/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Intranet/Intranet/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intranet/Admin(not finished).txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intranet/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intranet/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intranet/Mark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Mark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intranet/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intranet/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intranet/TechSupportGuy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/TechSupportGuy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intranet/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Teacher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,32 +27,33 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="77" />
-          <entry key="txt" value="1" />
+          <entry key="java" value="84" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="77" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="84" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="java" value="9517" />
+          <entry key="java" value="14770" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9517" />
+          <entry key="JAVA" value="14770" />
           <entry key="PLAIN_TEXT" value="23" />
         </counts>
       </usages-collector>
@@ -58,27 +62,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Intranet/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="216">
+              <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Intranet/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -93,10 +84,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Intranet/Employee.java">
+        <entry file="file://$PROJECT_DIR$/src/Intranet/Course.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="441">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding>
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#746#747#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#957#958#0" expanded="true" />
+                <element signature="e#984#985#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,11 +103,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Intranet/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+            <state relative-caret-position="552">
+              <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
               <folding>
                 <element signature="method#viewCourse#0;class#Teacher#0" />
                 <element signature="method#deleteCourse#0;class#Teacher#0" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
                 <element signature="e#2033#2034#0" expanded="true" />
                 <element signature="e#2070#2071#0" expanded="true" />
               </folding>
@@ -116,40 +117,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Intranet/Admin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Intranet/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
+            <state relative-caret-position="5817">
+              <caret line="277" column="12" selection-start-line="277" selection-start-column="12" selection-end-line="277" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Intranet/ORManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="69" />
-              <folding>
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
+                <element signature="method#Serialization#0;class#Runner#0" />
               </folding>
             </state>
           </provider>
@@ -170,6 +145,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -179,25 +155,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Intranet/Mark.java" />
         <option value="$PROJECT_DIR$/src/Intranet/Kalgan.java" />
         <option value="$PROJECT_DIR$/src/Intranet/User.java" />
         <option value="$PROJECT_DIR$/src/Intranet/Employee.java" />
         <option value="$PROJECT_DIR$/src/Intranet/CourseFile.java" />
         <option value="$PROJECT_DIR$/src/Intranet/ORManager.java" />
-        <option value="$PROJECT_DIR$/src/Intranet/Teacher.java" />
         <option value="$PROJECT_DIR$/src/Intranet/TechSupportGuy.java" />
-        <option value="$PROJECT_DIR$/src/Intranet/Course.java" />
         <option value="$PROJECT_DIR$/src/Intranet/Admin.java" />
-        <option value="$PROJECT_DIR$/src/Intranet/Runner.java" />
+        <option value="$PROJECT_DIR$/src/Intranet/Main.java" />
+        <option value="$PROJECT_DIR$/src/Intranet/Zvanie.java" />
+        <option value="$PROJECT_DIR$/src/Intranet/Mark.java" />
+        <option value="$PROJECT_DIR$/src/Intranet/Course.java" />
         <option value="$PROJECT_DIR$/src/Intranet/Student.java" />
+        <option value="$PROJECT_DIR$/src/Intranet/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/Intranet/Runner.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -235,7 +213,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543231571768" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543316443144" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -284,18 +262,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10805369" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22550336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5347518" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3248227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -303,6 +281,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -348,34 +327,10 @@
     <entry file="file://$PROJECT_DIR$/../MID_FINAL/src/Problem3/Shape.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/Mark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/Admin.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/TechSupportGuy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="87" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Intranet/ORManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="69" />
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="69" />
           <folding>
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />
@@ -387,39 +342,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Lab5/src/Second/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315" />
+        <state relative-caret-position="-3956" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/Admin.java">
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Admin.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/Runner.java">
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Zvanie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
-          <folding>
-            <element signature="method#viewCourse#0;class#Teacher#0" />
-            <element signature="method#deleteCourse#0;class#Teacher#0" />
-            <element signature="e#2033#2034#0" expanded="true" />
-            <element signature="e#2070#2071#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="84">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -430,6 +369,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Mark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1182">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Intranet/CourseFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -437,23 +416,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/User.java">
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="216">
+          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="552">
+          <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+          <folding>
+            <element signature="method#viewCourse#0;class#Teacher#0" />
+            <element signature="method#deleteCourse#0;class#Teacher#0" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/TechSupportGuy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="87" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5817">
+          <caret line="277" column="12" selection-start-line="277" selection-start-column="12" selection-end-line="277" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
+            <element signature="method#Serialization#0;class#Runner#0" />
           </folding>
         </state>
       </provider>

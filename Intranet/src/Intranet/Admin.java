@@ -58,6 +58,7 @@ public class Admin extends User {
                 ss += s + "\n";
                 s = bf.readLine();
             }
+            bf.close();
         }catch (FileNotFoundException FFE){
             System.out.println("File Not Found");
         }catch (IOException IOE){

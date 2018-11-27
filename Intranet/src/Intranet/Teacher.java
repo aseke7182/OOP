@@ -4,10 +4,15 @@ import java.util.ArrayList;
 
 public class Teacher extends Employee {
     private ArrayList<Course> course;
+    private Zvanie zvanie;
     private String message;
-    public Teacher(){super();}
+    public Teacher(){
+        super();
+        zvanie = Zvanie.Assitent;
+    }
     public Teacher(String name, String surname, String faculty,int salary, String id){
         super(name,surname,faculty,salary,id);
+        zvanie = Zvanie.justTeacher;
         course = new ArrayList<>();
     }
 
@@ -62,4 +67,15 @@ public class Teacher extends Employee {
     }
     public String getMessage(){ return message;}
 
+    public String actions(){
+        String s = "";
+        s += "1) See Your courses \n" ;
+        s += "2) Add course \n";
+        s += "3) Delete course \n";
+        s += "4) Exit - Q \n";
+        s += "5) See information about all students\n";
+        s += "6) Add some marks to some Student that you want\n";
+        s += "7) Send some request to our supporter\n";
+        return s;
+    }
 }

@@ -1,5 +1,8 @@
 package Intranet;
 
+
+import javax.swing.plaf.synth.SynthToolTipUI;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,12 +26,14 @@ public class Runner {
          courses = new ArrayList<>();
          courseFiles = new ArrayList<>();
          techSupportGuys = new ArrayList<>();
+         Serialization();
          while(true) {
              System.out.println("Hello My Dear Friend");
              System.out.println("How would you enter to the system?");
              System.out.println("1) Admin");
              System.out.println("2) Teacher");
              System.out.println("3) Student");
+             System.out.println("0) Exit");
              int a = reader.nextInt();
              if( a==1 ){
                  while (true){
@@ -168,10 +173,148 @@ public class Runner {
                      }
                  }
              }else if( a == 2){
+                 while (true){
+                     System.out.println("Now you try to enter like a teacher. Good Luck");
+                     System.out.println("Enter Your ID and Password");
+                     System.out.println("If you want to exit write Q");
+                     String id = reader.next();
+                     if(id.equals("Q")){
+                         break;
+                     }
+                     String pass = reader.next();
+                     for (int i=0 ; i < teachers.size() ; i++){
+                         if(teachers.get(i).getId().equals(id) && teachers.get(i).getFaculty().equals(pass)){
+                             System.out.println("Wow, You Entered Like a teacher.");
+                             System.out.println("My congratulations");
+                             while (true){
+                                 teachers.get(i).actions();
+                                 String s = reader.next();
+                                 if(s.equals("Q")){break;}
+                                 if(s.equals("1")){
+                                     while (true){
+                                         for(int j=0 ; j < teachers.get(i).getCourse().size(); j++){
+                                             System.out.println(teachers.get(i).getCourse().get(j).toString());
+                                         }
+                                         System.out.println("choose your course by counting from 0");
+                                         System.out.println("\n Now if you want see course's student or Course file write 1 or 2 respectively");
+                                         System.out.println("Now if you want to exit write Q");
+                                         int z = reader.nextInt();
+                                         String  w = reader.next();
+                                         if(w.equals("Q")){break;}
+                                         if(w.equals("1")){
+                                             teachers.get(i).getCourse().get(z).getStudentList().toString();
+                                         }
+                                         if(w.equals("2")){
+                                             teachers.get(i).getCourse().get(z).getCourseFile().toString();
+                                         }
+                                     }
+                                 }
+                                 if(s.equals("2")){
+                                     System.out.println("Add some course");
+                                     System.out.println("Write String title,String id, String faculty , int credits");
+                                     String title = reader.next();
+                                     String idwka = reader.next();
+                                     String faculty = reader.next();
+                                     int credits = reader.nextInt();
+                                     Course c = new Course(title,idwka,faculty,credits);
+                                     teachers.get(i).addCourse(c);
+                                 }
+                                 if(s.equals("3")){
+                                     System.out.println("If you want delete some course just write me its title");
+                                     String q = reader.next();
+                                     for (int j =0  ; j < teachers.get(i).getCourse().size(); j++){
+                                         if(teachers.get(i).getCourse().get(j).getTitle().equals(q)){
+                                             teachers.get(i).getCourse().remove(j);
+                                             System.out.println("Well Done , Now please exit from here because i do not enough time to complete these task to finally");
+                                         }
+                                     }
+                                 }
+                                 if(s.equals("4")){
+                                     System.out.println("Write me ID of student that you want to check");
+                                     String sdudent = reader.next();
+                                     for (int k=0 ; k < students.size(); k ++){
+                                         if(students.get(k).getId().equals(sdudent)){
+                                             System.out.println(teachers.get(0).informationAboutStudent(students.get(k)));
+                                         }
+                                     }
+                                 }
+                                 if(s.equals("5")){
+                                     System.out.println("Write me ID and mark that you want to stavit and course to this student");
+                                     String sdudent = reader.next();
+                                     int b = reader.nextInt();
+                                     for(int k=0 ; k < students.size(); k ++){
+                                         if(students.get(k).getId().equals(sdudent)){
+                                             students.get(k).setStudentCourseMark(new Course() , new Mark(b));
+                                         }
+                                     }
+                                 }
+                                 if(s.equals("7")){
+                                     System.out.println("Send some request");
+                                     System.out.println("Write Text and Support guy id");
 
+                                 }
+                             }
+                             break;
+                         }
+                     }
+                     System.out.println("Noo luck, try one more time \n");
+                 }
              }else if( a == 3 ){
 
+             }else if( a == 0 ){
+                 break;
              }
+
          }
+         Deserialization();
+    }
+    public static void Deserialization(){
+        try {
+            ObjectOutputStream oot = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Teachers.ser"));
+            oot.writeObject(teachers);
+            oot.flush();
+            oot.close();
+            ObjectOutputStream oot1 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Students.ser"));
+            oot1.writeObject(students);
+            oot1.flush();
+            oot1.close();
+            ObjectOutputStream oot2 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\orManagers.ser"));
+            oot2.writeObject(orManagers);
+            oot2.flush();
+            oot2.close();
+            ObjectOutputStream oot3 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\techSupportGuys.ser"));
+            oot3.writeObject(techSupportGuys);
+            oot3.flush();
+            oot3.close();
+
+        }catch (IOException ioe){
+            System.out.println("SSSS");
+        }
+    }
+    public static void  Serialization(){
+        try {
+            FileOutputStream teachers1 = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Teachers.ser");
+            ObjectOutputStream out  = new ObjectOutputStream(teachers1);
+            out.writeObject(teachers);
+            out.close();
+            teachers1.close();
+            FileOutputStream students1 = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Students.ser");
+            ObjectOutputStream out1 = new ObjectOutputStream(students1);
+            out1.writeObject(students);
+            out1.close();
+            students1.close();
+            FileOutputStream tech = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\TechSupportGuys.ser");
+            ObjectOutputStream out2 = new ObjectOutputStream(tech);
+            out2.writeObject(techSupportGuys);
+            out2.close();
+            tech.close();
+            FileOutputStream ormanagers = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\orManagers.ser");
+            ObjectOutputStream out3 = new ObjectOutputStream(ormanagers);
+            out3.writeObject(orManagers);
+            out3.close();
+            ormanagers.close();
+        }catch (IOException ioe){
+            System.out.println("Some Problem, Please check it, Thanks");
+        }
     }
 }

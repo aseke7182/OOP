@@ -1,5 +1,8 @@
 package Intranet;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -56,6 +59,15 @@ public class Student extends User {
     public String getYearStudy(){ return  yearStudy;}
     public void setYearStudy(String yearStudy){ this.yearStudy = yearStudy;}
     public double getGpa(){ return  gpa;}
+    public void setStudentCourseMark(Course c , Mark mark){
+        Iterator it = this.studentCourseMark.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry pair = (Map.Entry)it.next();
+            if(c.equals(it)){
+                c.setMark(mark);
+            }
+        }
+    }
     public void setGpa(double gpa){ this.gpa = gpa;}
     public String toString(){
         String s = " " + getName();
