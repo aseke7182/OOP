@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="537355c2-d20d-4875-b574-998f6acc2d4a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Intranet/Intranet/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Intranet/Intranet/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intranet/Admin(not finished).txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intranet/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intranet/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intranet/Mark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Mark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Intranet/Intranet/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Intranet/Intranet/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Intranet/Intranet/Students.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Intranet/Intranet/Teachers.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Intranet/Intranet/TechSupportGuys.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Intranet/Intranet/orManagers.ser" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intranet/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intranet/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Intranet/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intranet/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intranet/Students.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intranet/Teachers.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intranet/TechSupportGuys.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Intranet/orManagers.ser" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,24 +38,26 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="84" />
+          <entry key="out" value="1" />
+          <entry key="ser" value="3" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="84" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="23" />
-          <entry key="java" value="14770" />
+          <entry key="java" value="15939" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14770" />
+          <entry key="JAVA" value="15939" />
           <entry key="PLAIN_TEXT" value="23" />
         </counts>
       </usages-collector>
@@ -66,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/Intranet/Student.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+              <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Intranet/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="804">
               <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
               <folding>
                 <element signature="method#viewCourse#0;class#Teacher#0" />
@@ -120,11 +124,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Intranet/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5817">
-              <caret line="277" column="12" selection-start-line="277" selection-start-column="12" selection-end-line="277" selection-end-column="12" />
+            <state relative-caret-position="203">
+              <caret line="317" column="13" selection-start-line="317" selection-start-column="13" selection-end-line="317" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Serialization#0;class#Runner#0" />
               </folding>
             </state>
           </provider>
@@ -172,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -213,7 +216,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543316443144" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543320687275" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,7 +267,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22550336" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22550336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -273,7 +276,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3248227" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1177305" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -419,16 +422,23 @@
     <entry file="file://$PROJECT_DIR$/src/Intranet/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/TechSupportGuy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="87" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Intranet/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
+        <state relative-caret-position="804">
           <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
           <folding>
             <element signature="method#viewCourse#0;class#Teacher#0" />
@@ -441,20 +451,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Intranet/TechSupportGuy.java">
+    <entry file="file://$PROJECT_DIR$/src/Intranet/orManagers.ser">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Teachers.ser">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="87" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="87" />
+        <state>
+          <caret column="44" lean-forward="true" selection-start-column="44" selection-end-column="44" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Intranet/Teachers.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Intranet/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5817">
-          <caret line="277" column="12" selection-start-line="277" selection-start-column="12" selection-end-line="277" selection-end-column="12" />
+        <state relative-caret-position="203">
+          <caret line="317" column="13" selection-start-line="317" selection-start-column="13" selection-end-line="317" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Serialization#0;class#Runner#0" />
           </folding>
         </state>
       </provider>

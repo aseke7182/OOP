@@ -1,7 +1,9 @@
 package Intranet;
 
 
-import javax.swing.plaf.synth.SynthToolTipUI;
+
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -33,6 +35,8 @@ public class Runner {
              System.out.println("1) Admin");
              System.out.println("2) Teacher");
              System.out.println("3) Student");
+             System.out.println("4) TechSupportGuy");
+             System.out.println("5) ORmanager");
              System.out.println("0) Exit");
              int a = reader.nextInt();
              if( a==1 ){
@@ -187,7 +191,7 @@ public class Runner {
                              System.out.println("Wow, You Entered Like a teacher.");
                              System.out.println("My congratulations");
                              while (true){
-                                 teachers.get(i).actions();
+                                 System.out.println(teachers.get(i).actions());
                                  String s = reader.next();
                                  if(s.equals("Q")){break;}
                                  if(s.equals("1")){
@@ -195,10 +199,11 @@ public class Runner {
                                          for(int j=0 ; j < teachers.get(i).getCourse().size(); j++){
                                              System.out.println(teachers.get(i).getCourse().get(j).toString());
                                          }
-                                         System.out.println("choose your course by counting from 0");
+                                         System.out.println("choose your course by counting from 1");
                                          System.out.println("\n Now if you want see course's student or Course file write 1 or 2 respectively");
                                          System.out.println("Now if you want to exit write Q");
                                          int z = reader.nextInt();
+                                         z--;
                                          String  w = reader.next();
                                          if(w.equals("Q")){break;}
                                          if(w.equals("1")){
@@ -251,7 +256,13 @@ public class Runner {
                                  if(s.equals("7")){
                                      System.out.println("Send some request");
                                      System.out.println("Write Text and Support guy id");
-
+                                     String idwka = reader.next();
+                                     String message =  reader.next();
+                                     for (int j=0 ; j < techSupportGuys.size(); j++){
+                                         if(techSupportGuys.get(j).getId().equals(idwka)){
+                                             teachers.get(i).sendOrderToGuy(techSupportGuys.get(j),message);
+                                         }
+                                     }
                                  }
                              }
                              break;
@@ -261,60 +272,75 @@ public class Runner {
                  }
              }else if( a == 3 ){
 
-             }else if( a == 0 ){
+             }else if(a == 4){
+                 while (true){
+                     System.out.println("Write your id and password");
+                     String idwka = reader.next();
+                     String pass = reader.next();
+                     for (int i=0 ;  i < techSupportGuys.size(); i ++ ){
+                          if(techSupportGuys.get(i).getId().equals(idwka) && techSupportGuys.get(i).getFaculty().equals(pass)){
+                              while (true){
+                                  System.out.println("Wow You entered to my system");
+                                  System.out.println("Now if you want to see your orders from some teachers please write 'orders' otherwise you will exited");
+                                  System.out.println("Done to remove all order");
+                                  String s = reader.next();
+                                  if(s.equals("orders")){
+                                      System.out.println(techSupportGuys.get(i).getOrder());
+                                      break;
+                                  }
+                                  if(s.equals("Done")){
+                                      techSupportGuys.get(i).setOrder("");
+                                  }
+                              }
+                          }
+                     }
+                     System.out.println("If you want to exit write YES or NO to not exit");
+                     String exit = reader.next();
+                     if(exit.equals("YES")){
+                         break;
+                     }
+                 }
+             } else if( a == 0 ){
                  break;
+             }else if( a == 5){ // ORMANAGER
+
              }
 
          }
          Deserialization();
     }
-    public static void Deserialization(){
+    private static void Deserialization(){
         try {
-            ObjectOutputStream oot = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Teachers.ser"));
+            ObjectOutputStream oot = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Teachers.txt"));
             oot.writeObject(teachers);
             oot.flush();
             oot.close();
-            ObjectOutputStream oot1 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Students.ser"));
+           /* ObjectOutputStream oot1 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Students.out"));
             oot1.writeObject(students);
             oot1.flush();
             oot1.close();
-            ObjectOutputStream oot2 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\orManagers.ser"));
+            ObjectOutputStream oot2 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\orManagers.out"));
             oot2.writeObject(orManagers);
             oot2.flush();
             oot2.close();
-            ObjectOutputStream oot3 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\techSupportGuys.ser"));
+            ObjectOutputStream oot3 = new ObjectOutputStream(new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\techSupportGuys.out"));
             oot3.writeObject(techSupportGuys);
             oot3.flush();
-            oot3.close();
+            oot3.close();*/
 
         }catch (IOException ioe){
             System.out.println("SSSS");
         }
     }
-    public static void  Serialization(){
+    private static void  Serialization(){
         try {
-            FileOutputStream teachers1 = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Teachers.ser");
-            ObjectOutputStream out  = new ObjectOutputStream(teachers1);
-            out.writeObject(teachers);
-            out.close();
-            teachers1.close();
-            FileOutputStream students1 = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Students.ser");
-            ObjectOutputStream out1 = new ObjectOutputStream(students1);
-            out1.writeObject(students);
-            out1.close();
-            students1.close();
-            FileOutputStream tech = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\TechSupportGuys.ser");
-            ObjectOutputStream out2 = new ObjectOutputStream(tech);
-            out2.writeObject(techSupportGuys);
-            out2.close();
-            tech.close();
-            FileOutputStream ormanagers = new FileOutputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\orManagers.ser");
-            ObjectOutputStream out3 = new ObjectOutputStream(ormanagers);
-            out3.writeObject(orManagers);
-            out3.close();
-            ormanagers.close();
+           ObjectInputStream ois = new ObjectInputStream(new FileInputStream("C:\\Users\\Aseke\\Desktop\\KBTU\\III semester\\OOP\\Lab Works\\Intranet\\src\\Intranet\\Teachers.txt"));
+           teachers = (ArrayList<Teacher>) ois.readObject();
+           ois.close();
         }catch (IOException ioe){
             System.out.println("Some Problem, Please check it, Thanks");
+        }catch (ClassNotFoundException ios){
+            System.out.println("AAAA");
         }
     }
 }
